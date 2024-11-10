@@ -1,0 +1,5 @@
+requests>=2.25.1
+beautifulsoup4>=4.9.3
+selenium>=4.0.0
+webdriver-manager>=3.4.2
+tqdm>=4.60.0
