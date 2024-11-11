@@ -1,4 +1,3 @@
-
 # Updated HTTP/HTTPS proxies every 5 hours
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
@@ -191,7 +190,7 @@ We welcome contributions! If you’d like to add new features or suggest improve
 ### Proxy Reliability and Security:
 - **Public proxies may be unreliable and pose security risks.**
 - **Avoid using them for sensitive operations or data.**
-
+- **Remember that free proxies may log browsing history, so your online privacy may be compromised**
 ---
 
 ## License
