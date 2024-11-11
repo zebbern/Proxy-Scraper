@@ -2,14 +2,14 @@ name: Proxy Scraper Automation
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 permissions:
-  contents: write
+  contents: write  # Allow pushing changes to the repository
 
 jobs:
-  scrape-and-push:
+  scrape-and-clean:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,12 +23,16 @@ jobs:
 
     - name: Run Proxy Scraper
       run: |
-        python3 main.py
+        python3 main.py  # Run your scraper script to update proxies.txt
+
+    - name: Clean Proxies
+      run: |
+        python3 clean_proxies.py  # Run the cleaning script to create cleaned_proxies.txt
 
     - name: Commit and Push Updated Proxies
       run: |
         git config --global user.name "zebbern"
         git config --global user.email "zebbern@users.noreply.github.com"
-        git add proxies.txt
-        git commit -m "Updated proxies.txt via automation"
+        git add proxies.txt cleaned_proxies.txt
+        git commit -m "Updated proxies.txt and cleaned_proxies.txt via automation"
         git push
