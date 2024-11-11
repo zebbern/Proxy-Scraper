@@ -2,11 +2,11 @@ name: Proxy Scraper Automation
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
-  workflow_dispatch:  # Allows manual triggering of the workflow
+    - cron: '0 */6 * * *' 
+  workflow_dispatch: 
 
 permissions:
-  contents: write  # Allow pushing changes to the repository
+  contents: write 
 
 jobs:
   scrape-and-push:
@@ -18,11 +18,11 @@ jobs:
 
     - name: Ensure Directory for Script
       run: |
-        cd $GITHUB_WORKSPACE  # Ensure the script is executed in the correct directory
+        cd $GITHUB_WORKSPACE
 
     - name: Run Proxy Scraper
       run: |
-        python main.py  # Run your scraper script to update proxies.txt
+        python3 main.py
 
     - name: Commit and Push Updated Proxies
       run: |
