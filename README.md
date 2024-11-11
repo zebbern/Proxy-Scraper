@@ -124,7 +124,8 @@ We welcome contributions! Please submit pull requests or raise issues for featur
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Important Considerations:
+## Important Considerations
+Legal and Ethical Use:
 ```
 Legal and Ethical Use:
 Keep in mind that any illegal or unethical use of this information/proxy is solely your responsibility
