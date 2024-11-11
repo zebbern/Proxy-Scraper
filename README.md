@@ -78,7 +78,7 @@ Want to test proxies locally? Use the quick tester below!
 1. Create a file called `proxyhere.txt` in the same directory.
 2. Paste your proxy list (e.g., `IP:Port` format) into the file.
 3. At the end you get an option to save working proxies to a file for later use.
-4. Run this Python script:
+4. **Run this Python script:**
 
 ```python
 import requests
@@ -143,7 +143,7 @@ if __name__ == '__main__':
         print("No valid proxies found.")
 ```
 
-4. Save your working proxies to a file for later use.
+5. You can save file as **proxieshere.txt** to get the new working tested proxies into the same file u put them in
 
 ---
 
