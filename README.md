@@ -8,5 +8,6 @@ IP:Port
 
 ## Proxies.txt for list with:
 ```
-http/https:IP:Port
+http://:IP:Port
+https://:IP:Port
 ```
