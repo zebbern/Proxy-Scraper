@@ -80,7 +80,7 @@ Want to test proxies locally? Use the quick tester below!
 3. At the end you get an option to save working proxies to a file for later use.
 4. **Run this Python script:**
 
-```
+```python
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
