@@ -2,11 +2,11 @@ name: Proxy Scraper Automation
 
 on:
   schedule:
-    - cron: '0 */6 * * *' 
-  workflow_dispatch: 
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   scrape-and-push:
@@ -16,9 +16,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Ensure Directory for Script
+    - name: Install dependencies
       run: |
-        cd $GITHUB_WORKSPACE
+        python3 -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Run Proxy Scraper
       run: |
