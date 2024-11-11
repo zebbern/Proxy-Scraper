@@ -1,38 +1,29 @@
-name: Advanced Proxy Scraper Automation
+name: Proxy Scraper Automation
 
 on:
   schedule:
     - cron: '0 */6 * * *'  # Runs every 6 hours
-  workflow_dispatch:       # Allows manual triggering of the workflow
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 permissions:
-  contents: write
+  contents: write  # Allow pushing changes to the repository
 
 jobs:
-  build:
+  scrape-and-push:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
     - name: Run Proxy Scraper
       run: |
-        python proxy_scraper.py
+        python main.py  # Run your scraper script to update proxies.txt
 
-    - name: Commit results
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Automated proxy scraping and testing results by zebbern"
-        commit_user_name: "zebbern"
-        commit_user_email: "zebbern@users.noreply.github.com"
+    - name: Commit and Push Updated Proxies
+      run: |
+        git config --global user.name "zebbern"
+        git config --global user.email "zebbern@users.noreply.github.com"
+        git add proxies.txt
+        git commit -m "Updated proxies.txt via automation"
+        git push
