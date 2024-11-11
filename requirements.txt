@@ -1,7 +1,0 @@
-beautifulsoup4
-requests
-tqdm
-selenium
-webdriver-manager
-urllib3
-
