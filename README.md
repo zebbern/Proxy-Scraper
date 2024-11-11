@@ -1,65 +1,110 @@
-# Updated HTTP/HTTPS Proxies Every 3 Hours
+# Updated HTTP/HTTPS proxies every 3 hours
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-This repository offers a high-performance solution for scraping, validating, and testing HTTP/HTTPS proxies. Proxies are updated every 3 hours, ensuring users have access to the latest and most reliable options. Additionally, a Python-based proxy checker script is included to allow for efficient testing and validation of proxies.
+A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
 
 ---
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Features](#features)
-- [Proxy Output Formats](#proxy-output-formats)
-- [Python Self-Checker Script](#python-self-checker-script)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Proxies Output Formats](#proxies-output-formats)
+- [Proxy Tester Script](#proxy-tester-script)
+- [Contribution](#contribution)
 - [Important Considerations](#important-considerations)
-- [License](#license)
 
 ---
 
 ## Features
 
-- **Regular Proxy Updates:** Fetches updated proxies every 3 hours.
-- **Proxy Validation:** Ensures proxies are functional before use.
-- **Flexible Output Formats:** Supports formats such as `proxies.txt`, `proxyScrapeDump.txt`, and `cleaned_proxies.txt`.
-- **Python Proxy Checker Script:** Allows users to test proxy functionality locally with a range of customization options.
+- **[Proxy Validation](#)**: Tests proxies for connectivity and returns working proxies.
+- **[Multi-Endpoint Testing](#)**: Rotates between custom and public endpoints to reduce rate-limiting.
+- **[Speed Testing](#)**: Measures latency to rank proxies by performance.
+- **[Geolocation Support](#)**: Optionally determines the country and region of each proxy.
+- **[Custom Testing Server](#)**: Integrates with your own server (e.g., `http://164.90.187.218:5000/ip`).
+- **[Multiple Output Formats](#proxies-output-formats)**: Save results in text, JSON, or CSV formats.
+- **[Proxy Tester](#proxy-tester-script)**: Simple script to validate proxies locally.
 
 ---
 
-## Proxy Output Formats
+## Getting Started
 
-1. **Cleaned Format (`cleaned_proxies.txt`):**
-   ```
-   192.168.0.1:8080
-   45.43.82.113:6107
-   ```
-2. **Full Format (`proxies.txt`):**
-   ```
-   http://192.168.0.1:8080
-   https://45.43.82.113:6107
-   ```
+### Prerequisites
+- **Python 3.x**
+- Required Python libraries:
+  - `requests`
+  - `beautifulsoup4`
+  - `tqdm`
+  - `concurrent.futures`
+  - `urllib3`
+
+Install dependencies using:
+```
+pip install -r requirements.txt
+```
 
 ---
 
-## Checking Proxies Script | Online Checkers Are Really Bad! |
 
-This repository includes a Python script designed to validate proxies locally. 
+
+## Proxies Output Formats
+
+### Clean Format (`clean_proxies.txt`)
+```
+192.168.0.1:8080
+45.43.82.113:6107
+```
+
+### Full Format (`proxies.txt`)
+```
+http://192.168.0.1:8080
+https://45.43.82.113:6107
+```
+
+## Proxy Tester Script
+
+Want to test proxies locally? Use the quick tester below! 
 
 ### Features:
-- Tests proxies for connectivity and outputs working results.
-- Allows users to save valid proxies for later use.
-- Supports adjustable worker threads to balance speed and accuracy.
+- **Validates proxies quickly**
+- **Outputs valid or invalid status**
+- **Option to save working proxies**
 
-### How It Works:
-1. Paste proxies into `proxyhere.txt` in the `IP:Port` format.
-2. Run the script with a recommended worker setting of 3-5 for optimal accuracy.
-3. Optionally save working proxies to a file for future use.
-
-**Key Notes:**
-- Increasing the number of workers enhances speed but may reduce accuracy.
-- Detailed usage instructions are included in the script itself.
-
-## Python Self Checker Script
+### Instructions:
+1. Create a file called `proxyhere.txt` in the same directory.
+2. Paste your proxy list (e.g., `IP:Port` format) into the file.
+3. At the end you get an option to save working proxies to a file for later use.
+4. **Run this Python script:**
+###Important
+**The more "Workers" u have the less accurate results you get**
+- More workers = Faster but less working proxies - 10-100 workers
+- Less workers = Slower but more working proxies - 1-10 workers
+### Use 1-10 workers max for the optimal result
+```
+What i do:
+-----------------------------------------------------------------------------------------
+1. First i copy the cleaned_proxies
+2. I paste them in proxiehere.txt
+3. I run the python script with workers set at 3
+4. Done
+-----------------------------------------------------------------------------------------
+I use 1-5 workers when i do it myself as this gives me most proxies with correct result
+-----------------------------------------------------------------------------------------
+The Main scraper info:
+-----------------------------------------------------------------------------------------
+- The Script use 50 workers
+- This is done becuase it checks 8000+ Proxies 
+- You can run this urself if and set workers to 10 if you want more working proxies
+-----------------------------------------------------------------------------------------
+What The Checker Under Does:
+-----------------------------------------------------------------------------------------
+- Uses 5 workers
+- Can save results in a new txt at the end
+```
+### Python Self Checker Script
 ```python
 import requests
 from concurrent.futures import ThreadPoolExecutor
@@ -122,23 +167,32 @@ if __name__ == '__main__':
         print("No valid proxies found.")
 
 ```
-### You can save file as **proxieshere.txt** to get the new working tested proxies into the same file u put them in
+
+5. You can save file as **proxieshere.txt** to get the new working tested proxies into the same file u put them in
+
+---
+
+## Contribution
+
+We welcome contributions! If you’d like to add new features or suggest improvements:
+- Fork the repository
+- Submit a pull request
+- Raise issues for discussion
+
 ---
 
 ## Important Considerations
 
-### Legal and Ethical Use
-- Ensure the proxies are used ethically and responsibly.
-- The repository owner is not liable for any misuse of this tool or the proxies.
+### Legal and Ethical Use:
+- **Use the proxies responsibly and ethically.**
+- **Any illegal or unethical use of this tool or its proxies is solely your responsibility.**
 
-### Proxy Reliability and Security
-- Be cautious of public proxies, as they may log browsing history and compromise security.
-- Avoid using free proxies for sensitive operations.
-
+### Proxy Reliability and Security:
+- **Public proxies may be unreliable and pose security risks.**
+- **Avoid using them for sensitive operations or data.**
+- **Remember that free proxies may log browsing history, so your online privacy may be compromised**
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
