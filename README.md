@@ -50,7 +50,8 @@ Install dependencies using:
 ```
 pip install -r requirements.txt
 ```
-# Want to test out the proxies yourself? Use this script! "PS": Most testers on the internett are really bad do not trust them.
+# Want to test out the proxies yourself? Use this script! 
+**"PS": Most testers on the internett are really bad do not trust them.**
 ```
 import requests
 import sys
