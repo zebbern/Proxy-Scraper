@@ -48,6 +48,15 @@ USER_AGENTS = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)',
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
+    'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36',
+    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.8',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59', 
+    'Mozilla/5.0 (Linux; Android 10; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 SamsungBrowser/14.0',
+
     # Add more user agents as needed
 ]
 
@@ -178,26 +187,30 @@ def fetch_proxies():
         proxies = fetch_proxies_from_api(PROXY_SOURCES[key])
         yield proxies
 
-def test_proxy(proxy):
-    """
-    Tests a single proxy by making a request to http://httpbin.org/ip.
-    Returns the proxy if it's working, else None.
-    """
+test_urls = [
+    "http://164.90.187.218:5000/ip",
+    "http://httpbin.org/ip",
+    "https://api.ipify.org"
+]
+
+def test_proxy_with_rotation(proxy):
+    url = random.choice(test_urls)
     try:
         response = requests.get(
-            'http://httpbin.org/ip',
-            proxies={'http': proxy, 'https': proxy},
+            url,
+            proxies={"http": proxy, "https": proxy},
             headers=HEADERS,
             timeout=TEST_TIMEOUT,
-            verify=False  # Disable SSL verification
+            verify=False
         )
         if response.status_code == 200:
+            print(f"Working proxy: {proxy} via {url}")
             return proxy
-    except requests.RequestException:
-        pass
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Failed proxy: {proxy} via {url} - {e}")
     return None
+
+
 
 def save_proxies(proxies, filename='proxies.txt'):
     """
