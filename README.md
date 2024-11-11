@@ -41,7 +41,7 @@ This repository offers a high-performance solution for scraping, validating, and
 
 ---
 
-## Python Self-Checker Script
+## Checking Proxies Script | Online Checkers Are Really Bad! |
 
 This repository includes a Python script designed to validate proxies locally. 
 
