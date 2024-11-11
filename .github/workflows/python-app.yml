@@ -16,9 +16,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Ensure Directory for Script
+      run: |
+        cd $GITHUB_WORKSPACE  # Ensure the script is executed in the correct directory
+
     - name: Run Proxy Scraper
       run: |
-        python3 main.py  # Run your scraper script to update proxies.txt
+        python main.py  # Run your scraper script to update proxies.txt
 
     - name: Commit and Push Updated Proxies
       run: |
