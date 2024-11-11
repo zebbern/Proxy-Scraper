@@ -8,7 +8,6 @@ This repository offers a high-performance solution for scraping, validating, and
 ---
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Features](#features)
 - [Proxy Output Formats](#proxy-output-formats)
 - [Python Self-Checker Script](#python-self-checker-script)
