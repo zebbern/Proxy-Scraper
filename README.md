@@ -160,3 +160,8 @@ if __name__ == "__main__":
     main()
 
 ```
+# Contribution
+We welcome contributions! Please submit pull requests or raise issues for feature requests.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
