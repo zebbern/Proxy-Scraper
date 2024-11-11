@@ -1,5 +1,4 @@
 # Proxy-Scraper
-<br><br/>
 - **Updated HTTP/HTTPS proxies every 5 hours**
 <br><br/>
 
