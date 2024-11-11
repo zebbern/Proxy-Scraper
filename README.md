@@ -1,38 +1,34 @@
+
 # Proxy-Scraper
-- **Updated HTTP/HTTPS proxies every 5 hours**
-<br><br/>
-
-## clean_proxies.txt for list with:
-```
-IP:Port
-```
-
-## proxies.txt for list with:
-```
-http://:IP:Port
-https://:IP:Port
-```
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-A comprehensive proxy checker tool to validate, test, and categorize HTTP, HTTPS, and SOCKS proxies. This script is designed to handle large proxy lists, identify working proxies, and save results in various formats. It is optimized for high performance and supports custom testing servers, geolocation checks, speed testing, and proxy rotation.
+A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 5 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Proxies Output Formats](#proxies-output-formats)
+- [Proxy Tester Script](#proxy-tester-script)
+- [Contribution](#contribution)
+- [Important Considerations](#important-considerations)
 
 ---
 
 ## Features
 
-- **Proxy Validation**: Tests proxies for connectivity and returns working proxies.
-- **Multi-Endpoint Testing**: Rotates between custom and public endpoints to reduce rate-limiting.
-- **Speed Testing**: Measures the latency of each proxy to rank performance.
-- **Anonymity Detection**: Identifies proxy anonymity levels (Transparent, Anonymous, or Elite).
-- **Geolocation Support**: Optionally determines the country and region of each proxy.
-- **Custom Testing Server**: Integrates with your own server for IP detection (e.g., `http://164.90.187.218:5000/ip`).
-- **Multiple Output Formats**: Saves results in text, JSON, or CSV formats.
-- **Multithreading**: Efficiently handles large proxy lists with multithreading.
-- **Failover Support**: Automatically retries proxies using backup endpoints.
-- **Easy Integration**: Export working proxies for use in web scraping or automation tasks.
+- **[Proxy Validation](#)**: Tests proxies for connectivity and returns working proxies.
+- **[Multi-Endpoint Testing](#)**: Rotates between custom and public endpoints to reduce rate-limiting.
+- **[Speed Testing](#)**: Measures latency to rank proxies by performance.
+- **[Geolocation Support](#)**: Optionally determines the country and region of each proxy.
+- **[Custom Testing Server](#)**: Integrates with your own server (e.g., `http://164.90.187.218:5000/ip`).
+- **[Multiple Output Formats](#proxies-output-formats)**: Save results in text, JSON, or CSV formats.
+- **[Proxy Tester](#proxy-tester-script)**: Simple script to validate proxies locally.
 
 ---
 
@@ -48,16 +44,66 @@ A comprehensive proxy checker tool to validate, test, and categorize HTTP, HTTPS
   - `urllib3`
 
 Install dependencies using:
-```
+```bash
 pip install -r requirements.txt
 ```
-# Want to test out the proxies yourself? Use this script!
-- **Most testers on the internett are really bad do not trust them**
-- **Here is a nice quick tester**
-- **Gives u Valid or Not**
-- **Gives an option to save working proxies at the end**
-### Create a file called **proxyhere.txt** place it in the same directory then run ur .py that has this code!
+
+---
+
+## Usage
+
+### Clean Proxies
+Get a simple list of proxies in the `clean_proxies.txt` file:
 ```
+IP:Port
+```
+
+### Full Proxies
+Get a full list of proxies in the `proxies.txt` file:
+```
+http://IP:Port
+https://IP:Port
+```
+
+### Running the Script
+Run the main script to scrape, test, and validate proxies:
+```bash
+python proxy_checker.py
+```
+
+---
+
+## Proxies Output Formats
+
+### Clean Format (`clean_proxies.txt`)
+```
+192.168.0.1:8080
+45.43.82.113:6107
+```
+
+### Full Format (`proxies.txt`)
+```
+http://192.168.0.1:8080
+https://45.43.82.113:6107
+```
+
+---
+
+## Proxy Tester Script
+
+Want to test proxies locally? Use the quick tester below! 
+
+### Features:
+- **Validates proxies quickly**
+- **Outputs valid or invalid status**
+- **Option to save working proxies**
+
+### Instructions:
+1. Create a file called `proxyhere.txt` in the same directory.
+2. Paste your proxy list (e.g., `IP:Port` format) into the file.
+3. Run this Python script:
+
+```python
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
@@ -113,24 +159,38 @@ if __name__ == '__main__':
                 output_file = 'valid_proxies.txt'
             with open(output_file, 'w') as f:
                 for proxy in valid_proxies:
-                    f.write(f'{proxy}\n')
+                    f.write(f'{proxy}
+')
             print(f"Valid proxies saved to {output_file}")
     else:
         print("No valid proxies found.")
-
 ```
-# Contribution
-We welcome contributions! Please submit pull requests or raise issues for feature requests.
+
+4. Save your working proxies to a file for later use.
+
+---
+
+## Contribution
+
+We welcome contributions! If you’d like to add new features or suggest improvements:
+- Fork the repository
+- Submit a pull request
+- Raise issues for discussion
+
+---
 
 ## Important Considerations
-Legal and Ethical Use:
-```
-Legal and Ethical Use:
-Keep in mind that any illegal or unethical use of this information/proxy is solely your responsibility
-Use the proxies responsibly and ethically
-```
-## Proxy Reliability and Security:
-```
-Public proxies can be unreliable and may pose security risks
-Avoid using them for sensitive data or operations
-```
+
+### Legal and Ethical Use:
+- **Use the proxies responsibly and ethically.**
+- **Any illegal or unethical use of this tool or its proxies is solely your responsibility.**
+
+### Proxy Reliability and Security:
+- **Public proxies may be unreliable and pose security risks.**
+- **Avoid using them for sensitive operations or data.**
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
