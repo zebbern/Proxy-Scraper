@@ -94,12 +94,16 @@ What i do:
 -----------------------------------------------------------------------------------------
 I use 1-5 workers when i do it myself as this gives me most proxies with correct result
 -----------------------------------------------------------------------------------------
-The main.py script
+The Main scraper info:
 -----------------------------------------------------------------------------------------
 - The Script use 50 workers
 - This is done becuase it checks 8000+ Proxies 
 - You can run this urself if and set workers to 10 if you want more working proxies
 -----------------------------------------------------------------------------------------
+What The Checker Under Does:
+-----------------------------------------------------------------------------------------
+- Uses 5 workers
+- Can save results in a new txt at the end
 ```
 
 ```python
@@ -142,7 +146,7 @@ if __name__ == '__main__':
     args_list = [(idx, total_proxies, proxy) for idx, proxy in enumerate(proxies_list, start=1)]
 
     # Use ThreadPoolExecutor with fewer workers to control request rate
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         # Use executor.map to process proxies in order
         for result, valid_proxy in executor.map(check_proxy, args_list):
             print(result)
