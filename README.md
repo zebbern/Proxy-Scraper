@@ -1,6 +1,7 @@
 
 # Proxy-Scraper
 Updated HTTP/HTTPS proxies every 5 hours
+---
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
