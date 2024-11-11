@@ -59,7 +59,7 @@ This repository includes a Python script designed to validate proxies locally.
 - Increasing the number of workers enhances speed but may reduce accuracy.
 - Detailed usage instructions are included in the script itself.
 
-### Python Self Checker Script
+## Python Self Checker Script
 ```python
 import requests
 from concurrent.futures import ThreadPoolExecutor
