@@ -1,9 +1,9 @@
-# Updated HTTP/HTTPS proxies every 5 hours
+# Updated HTTP/HTTPS proxies every 3 hours
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 5 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
+A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
 
 ---
 
