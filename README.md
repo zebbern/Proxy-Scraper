@@ -17,12 +17,6 @@ This repository offers a high-performance solution for scraping, validating, and
 
 ---
 
-## Introduction
-
-This GitHub repository provides tools to retrieve and validate HTTP/HTTPS proxies with a focus on performance, reliability, and ease of use. The proxies are updated automatically every 3 hours and are available in multiple formats for flexibility.
-
----
-
 ## Features
 
 - **Regular Proxy Updates:** Fetches updated proxies every 3 hours.
