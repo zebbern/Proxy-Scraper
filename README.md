@@ -123,3 +123,15 @@ We welcome contributions! Please submit pull requests or raise issues for featur
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Important Considerations:
+```
+Legal and Ethical Use:
+Keep in mind that any illegal or unethical use of this information/proxy is solely your responsibility
+Use the proxies responsibly and ethically
+```
+## Proxy Reliability and Security:
+```
+Public proxies can be unreliable and may pose security risks
+Avoid using them for sensitive data or operations
+```
