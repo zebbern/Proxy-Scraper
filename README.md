@@ -1,5 +1,5 @@
 # Proxy-Scraper
-Updated HTTP/HTTPS proxies every 5 hours.
+**Updated HTTP/HTTPS proxies every 5 hours.**
 
 ## Clean_Proxies.txt for list with:
 ```
