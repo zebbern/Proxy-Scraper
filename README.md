@@ -59,7 +59,7 @@ This repository includes a Python script designed to validate proxies locally.
 - Increasing the number of workers enhances speed but may reduce accuracy.
 - Detailed usage instructions are included in the script itself.
 
-### Script:
+### Python Self Checker Script
 ```python
 import requests
 from concurrent.futures import ThreadPoolExecutor
@@ -120,8 +120,9 @@ if __name__ == '__main__':
             print(f"Valid proxies saved to {output_file}")
     else:
         print("No valid proxies found.")
-```
 
+```
+### You can save file as **proxieshere.txt** to get the new working tested proxies into the same file u put them in
 ---
 
 ## Important Considerations
