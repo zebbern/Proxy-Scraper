@@ -43,34 +43,13 @@ A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxie
   - `urllib3`
 
 Install dependencies using:
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ---
 
-## Usage
 
-### Clean Proxies
-Get a simple list of proxies in the `clean_proxies.txt` file:
-```
-IP:Port
-```
-
-### Full Proxies
-Get a full list of proxies in the `proxies.txt` file:
-```
-http://IP:Port
-https://IP:Port
-```
-
-### Running the Script
-Run the main script to scrape, test, and validate proxies:
-```bash
-python proxy_checker.py
-```
-
----
 
 ## Proxies Output Formats
 
@@ -85,8 +64,6 @@ python proxy_checker.py
 http://192.168.0.1:8080
 https://45.43.82.113:6107
 ```
-
----
 
 ## Proxy Tester Script
 
