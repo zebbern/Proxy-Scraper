@@ -193,7 +193,7 @@ test_urls = [
     "https://api.ipify.org"
 ]
 
-def test_proxy_with_rotation(proxy):
+def test_proxy(proxy):
     url = random.choice(test_urls)
     try:
         response = requests.get(
