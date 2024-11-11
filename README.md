@@ -77,7 +77,8 @@ Want to test proxies locally? Use the quick tester below!
 ### Instructions:
 1. Create a file called `proxyhere.txt` in the same directory.
 2. Paste your proxy list (e.g., `IP:Port` format) into the file.
-3. Run this Python script:
+3. At the end you get an option to save working proxies to a file for later use.
+4. Run this Python script:
 
 ```python
 import requests
