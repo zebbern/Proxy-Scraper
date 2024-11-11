@@ -18,7 +18,7 @@ jobs:
 
     - name: Run Proxy Scraper
       run: |
-        python main.py  # Run your scraper script to update proxies.txt
+        python3 main.py  # Run your scraper script to update proxies.txt
 
     - name: Commit and Push Updated Proxies
       run: |
