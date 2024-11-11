@@ -79,7 +79,7 @@ Want to test proxies locally? Use the quick tester below!
 2. Paste your proxy list (e.g., `IP:Port` format) into the file.
 3. At the end you get an option to save working proxies to a file for later use.
 4. **Run this Python script:**
-The more "Workers" u have the less accurate the tester is!
+**The more "Workers" u have the less accurate the tester is!**
 
 ```python
 import requests
