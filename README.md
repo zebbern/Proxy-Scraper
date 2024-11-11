@@ -79,8 +79,23 @@ Want to test proxies locally? Use the quick tester below!
 2. Paste your proxy list (e.g., `IP:Port` format) into the file.
 3. At the end you get an option to save working proxies to a file for later use.
 4. **Run this Python script:**
-5. ```Important```
-**The more "Workers" u have the less accurate the tester is!**
+###Important
+**The more "Workers" u have the less accurate results you get**
+- More workers = Faster but less working proxies - 10-100 workers
+- Less workers = Slower but more working proxies - 1-10 workers
+### Use 1-10 workers max for the optimal result
+```
+What the script does:
+The Script use 50 workers ~ This is done becuase it checks 8000+ Proxies 
+
+What i do:
+1. First i copy the cleaned_proxies
+2. I paste them in proxiehere.txt
+3. I run the python script with workers set at 3
+4. Done
+###
+I use 1-5 workers when i do it myself as this gives me most proxies with correct result
+```
 
 ```python
 import requests
