@@ -80,7 +80,7 @@ Want to test proxies locally? Use the quick tester below!
 3. At the end you get an option to save working proxies to a file for later use.
 4. **Run this Python script:**
 
-```python
+```
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
@@ -136,11 +136,11 @@ if __name__ == '__main__':
                 output_file = 'valid_proxies.txt'
             with open(output_file, 'w') as f:
                 for proxy in valid_proxies:
-                    f.write(f'{proxy}
-')
+                    f.write(f'{proxy}\n')
             print(f"Valid proxies saved to {output_file}")
     else:
         print("No valid proxies found.")
+
 ```
 
 5. You can save file as **proxieshere.txt** to get the new working tested proxies into the same file u put them in
