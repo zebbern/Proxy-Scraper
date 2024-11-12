@@ -5,9 +5,6 @@
 
 A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
 
-## You can test Proxies Here!
-https://proxychecks.com/ip/verify
-
 ---
 
 ## Table of Contents
