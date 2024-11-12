@@ -5,6 +5,44 @@
 
 A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
 
+## Want to check proxies yourself?
+**Panel Link**
+```
+https://proxychecks.com/ip/verify
+```
+**Why use this?**
+```
+- Proxytester is one of the fastest and most accurate testers out there
+- Free No Ads!
+- Possible to create an account to save working proxies history
+```
+**Where do i Signup?**
+```
+- We support http & https
+https://proxychecks.com/register
+https://proxychecks.com/login
+```
+**Quick info for making an account?**
+**Step 1**
+- Link to register `USER`----------->
+-------------------------------------
+(https://proxychecks.com/register) 
+-------------------------------------
+```
+- Choose USER:PASS
+- Click SignUp
+```
+**Step 2**
+- Link to login `USER`-------------->
+-------------------------------------
+(https://proxychecks.com/login) 
+-------------------------------------
+```
+- Login with USER:PASS you just created
+- [https://proxychecks.com/ip/verify](https://proxychecks.com/ip/verify)
+```
+
+```
 ---
 
 ## Table of Contents
