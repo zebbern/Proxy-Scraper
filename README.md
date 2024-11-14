@@ -24,6 +24,7 @@ A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxie
 - **[Multi-Endpoint Testing](#)**: Rotates between custom and public endpoints to reduce rate-limiting.
 - **[Speed Testing](#)**: Measures latency to rank proxies by performance.
 - **[Geolocation Support](#)**: Optionally determines the country and region of each proxy.
+- **[Custom Testing Server](#)**: Integrates with your own server (e.g., `http://164.90.187.218:5000/ip`).
 - **[Multiple Output Formats](#proxies-output-formats)**: Save results in text, JSON, or CSV formats.
 - **[Proxy Tester](#proxy-tester-script)**: Simple script to validate proxies locally.
 
