@@ -18,7 +18,7 @@ A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxie
 
 ---
 ## Extra
-if you want to scrape high premium proxies that works alot of the time my project
+If you want to scrape high premium proxies that works alot of the time my project
 [dosint](https://github.com/zebbern/dosint) Scrapes proxies i use all the time
 
 ## Features
