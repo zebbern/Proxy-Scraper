@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-A comprehensive proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
+Proxy scraper and tester that provides updated HTTP/HTTPS proxies every 3 hours. This project is optimized for high performance and reliability, with features like proxy validation, testing, and output customization.
 
 ---
 
@@ -193,6 +193,3 @@ We welcome contributions! If you’d like to add new features or suggest improve
 - **Remember that free proxies may log browsing history, so your online privacy may be compromised**
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
