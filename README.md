@@ -1,14 +1,19 @@
+<div align="center">
+    
+![prprprrooooo](https://github.com/user-attachments/assets/d6ad457b-87de-4b76-8886-402b7c4bfab5)
+
+
 ## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 **This project is for high performance and reliability, with features like proxy validation, testing, and output customization.**
-- **[Proxy Tester Settings](#how-to-use)** 
-- **[Proxy Tester Code](#proxy-tester-code)** - **Simple script to validate proxies locally.**
-- **[Important Considerations](#important)** 
----
+ 
+ **[Proxy Tester Settings](#how-to-use)** | **[Proxy Tester Code](#proxy-tester-code)** | **[Important Considerations](#important)** 
 
+---
+</div>
 
 ## How To Use
 
