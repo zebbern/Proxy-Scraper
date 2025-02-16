@@ -1,9 +1,7 @@
-## Updated HTTP/HTTPS/Socks4/Socks5 proxies every 3 hours
+## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every 3 hours
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
-
-**Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every 3 hours.**
 
 **This project is for high performance and reliability, with features like proxy validation, testing, and output customization.**
 - **[Proxy Tester Settings](#how-to-use)** 
