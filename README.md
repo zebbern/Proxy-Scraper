@@ -1,4 +1,4 @@
-# Updated HTTP/HTTPS proxies every 3 hours
+## Updated HTTP/HTTPS/Socks4/Socks5 proxies every 3 hours
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
