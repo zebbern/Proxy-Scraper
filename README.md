@@ -1,6 +1,7 @@
 <div align="center">
     
-![prprprrooooo](https://github.com/user-attachments/assets/d6ad457b-87de-4b76-8886-402b7c4bfab5)
+<img src="https://github.com/user-attachments/assets/d6ad457b-87de-4b76-8886-402b7c4bfab5" style="width:45%;">
+
 
 
 ## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
