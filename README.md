@@ -1,10 +1,9 @@
 <div align="center">
+
+## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
     
 <img src="https://github.com/user-attachments/assets/d6ad457b-87de-4b76-8886-402b7c4bfab5" style="width:45%;">
 
-
-
-## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
