@@ -96,14 +96,17 @@ if __name__ == '__main__':
 
 5. You can save file as **proxies.txt** to get the new working tested proxies into the same file u put them in
 
----
-
 <a name="important"></a>
-
-> [!Warning]
-> - **`This repository lists public proxies automatically.`**
-> - **`I do not own, verify, or endorse them and take no responsibility.`**
-> - **`Use at your own risk they may be unstable, unsafe, or monitored.`**
-> - **`The owner is not liable for any use, misuse, or consequences.`**
-
-
+> [!Important]
+> 
+> ---
+> ### Legal and Ethical Use:
+> - **Use the proxies responsibly and ethically.**
+> - **Any illegal or unethical use of this tool or its proxies is solely your responsibility.**
+> - **This is all public available proxies and has nothing to do with me this list is only for easy access to proxies.**
+> ---
+> ### Proxy Reliability and Security:
+> - **Public proxies may be unreliable and pose security risks.**
+> - **Avoid using them for sensitive operations or data.**
+> - **Remember that free proxies may log browsing history, so your online privacy may be compromised**
+> ---
