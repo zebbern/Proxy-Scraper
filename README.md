@@ -1,7 +1,3 @@
-# Having a Issue with my Cloud Pc Problem will be fixed tomorrow!
-
-# issue fix 26.april 2025 22:00
-
 <div align="center">
 
 ## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
