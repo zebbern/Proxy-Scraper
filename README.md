@@ -1,3 +1,5 @@
+# This project is no longer maintained
+
 <div align="center">
 
 ## Provides Updated `HTTP/HTTPS/Socks4/Socks5` proxies every hour!
